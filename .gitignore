@@ -1,0 +1,6 @@
+# macOS Files
+.DS_Store
+
+# Generated Documentation
+docs/html
+docs/latex
