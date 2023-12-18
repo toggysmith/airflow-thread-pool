@@ -11,3 +11,7 @@ file(GLOB_RECURSE AIRFLOW_SOURCES "src/*.cpp")
 add_library(airflow ${AIRFLOW_SOURCES})
 
 target_include_directories(airflow PRIVATE "include")
+
+if (AIRFLOW_BUILD_EXAMPLES)
+    add_subdirectory("examples")
+endif()

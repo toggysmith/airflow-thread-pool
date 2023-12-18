@@ -10,3 +10,4 @@ docs/latex
 
 # Build Output 
 build/
+examples/**/build/
