@@ -4,3 +4,9 @@
 # Generated Documentation
 docs/html
 docs/latex
+
+# CMake
+.cache/
+
+# Build Output 
+build/
