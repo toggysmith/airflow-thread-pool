@@ -13,3 +13,7 @@ Airflow's API is documented in the source code using Doxygen documentation comme
 ## Building examples
 
 Airflow has several code examples located under `examples/`. These can be built manually by running `cmake -B build -DBUILD_EXAMPLES=ON` followed by `cmake --build build` in the root directory. An easier alternative is to use the `tools/build_examples.py` script. CMake must be installed and on the PATH for this script to work. The built examples will be under `build/examples/`.
+
+## Building tests
+
+Airflow has numerous tests located under `tests/`. These can be built manually by running `cmake -B build -DBUILD_TESTS=ON` followed by `cmake --build build` in the root directory. An easier alternative is to use the `tools/build_tests.py` script. CMake must be installed and on the PATH for this script to work. The built tests can be run by executing `build/tests/test_runner`.
