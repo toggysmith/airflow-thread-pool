@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.20)
 project(airflow LANGUAGES CXX)
 
 option(BUILD_EXAMPLES "Build examples." OFF)
+option(BUILD_TESTS "Build tests." OFF)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -16,4 +17,9 @@ target_include_directories(airflow PRIVATE "include")
 
 if(BUILD_EXAMPLES)
     add_subdirectory("examples")
+endif()
+
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory("tests")
 endif()
